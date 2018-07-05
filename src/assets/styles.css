@@ -1,47 +1,47 @@
-@import url(http://fonts.googleapis.com/css?family=Merriweather+Sans);
+@import url("https://fonts.googleapis.com/css?family=Merriweather+Sans");
 body {
-	padding: 0;
-  font-family: 'VT323', monospace;
-  color:  #ffa347;
-  cursor: url('../../imgs/cursor.png') 25 15, auto;
-	background: url(https://scienceisbrilliant.files.wordpress.com/2013/10/black-spce.jpg);
+  padding: 0;
+  font-family: "VT323", monospace;
+  color: #ffa347;
+  cursor: url("../../imgs/cursor.png") 25 15, auto;
+  background: url(https://scienceisbrilliant.files.wordpress.com/2013/10/black-spce.jpg);
 }
 section {
-  cursor : default;
+  cursor: default;
 }
-.hamburger-icon{
-	height: 3vh;
+.hamburger-icon {
+  height: 3vh;
 }
 button.open {
-	position: fixed;
-	background-color: hsla(0, 0%, 0%, 0);
-	display: none;
-	border-style: none;
-	color:  rgb(0, 235, 219);
+  position: fixed;
+  background-color: hsla(0, 0%, 0%, 0);
+  display: none;
+  border-style: none;
+  color: rgb(0, 235, 219);
 }
 button.open img {
-	width: 2rem;
+  width: 2rem;
 }
-#ex2{
-	overflow: auto;
-	background-color: rgb(88, 88, 88);
-	font-size: 1.25em;
-	color: rgb(0, 235, 219);
+#ex2 {
+  overflow: auto;
+  background-color: rgb(88, 88, 88);
+  font-size: 1.25em;
+  color: rgb(0, 235, 219);
 }
-#ex2 li{
-	list-style-type: none;
-	line-height: 1.4em;
+#ex2 li {
+  list-style-type: none;
+  line-height: 1.4em;
 }
-.high-score{
-	height: 90%;
+.high-score {
+  height: 90%;
 }
-.high-score-list li{
-	list-style-type: none;
-	line-height: 1.4em;
+.high-score-list li {
+  list-style-type: none;
+  line-height: 1.4em;
 }
-.high-score-list{
-	text-align: left;
-	font-size: 1.75em;
+.high-score-list {
+  text-align: left;
+  font-size: 1.75em;
 }
 .splashcontainer {
   width: 80vh;
@@ -63,7 +63,7 @@ button.open img {
   width: 50vh;
   font-size: 7em;
   font-weight: 400;
-  font-family: 'Bungee', cursive;
+  font-family: "Bungee", cursive;
   margin: 20px auto;
   padding: auto 0px;
   margin-bottom: 127px;
@@ -71,13 +71,13 @@ button.open img {
   position: relative;
   color: #00ebdb;
 }
-.alien{
+.alien {
   position: absolute;
   top: -123px;
-  left: -1000px
+  left: -1000px;
 }
 
-.hunt{
+.hunt {
   position: absolute;
   right: -1200px;
 }
@@ -95,50 +95,50 @@ button.open img {
   list-style: none;
 }
 
-.splashbutton1:hover{
-	color: white;
-	cursor: pointer;
+.splashbutton1:hover {
+  color: white;
+  cursor: pointer;
 }
 
-.splashbutton2:hover{
-	color: white;
-	cursor: pointer;
+.splashbutton2:hover {
+  color: white;
+  cursor: pointer;
 }
 
-.splashbutton4:hover{
-	color: white;
-	cursor: pointer;
+.splashbutton4:hover {
+  color: white;
+  cursor: pointer;
 }
-.splashbutton5{
-	color: #ffa347;
+.splashbutton5 {
+  color: #ffa347;
 }
-.splashbutton6{
-	color: #ffa347;
+.splashbutton6 {
+  color: #ffa347;
 }
-.splashbutton5:hover{
-	color: white;
-	cursor: pointer;
+.splashbutton5:hover {
+  color: white;
+  cursor: pointer;
 }
-.splashbutton6:hover{
-	color: white;
-	cursor: pointer;
+.splashbutton6:hover {
+  color: white;
+  cursor: pointer;
 }
 .login {
-	text-decoration: none;
-	width: 45vh;
-	margin: 0 auto;
-	list-style: none;
-	font-size: 35px;
-	font-weight: 700;
-	line-height: 1.4em;
-	font-family: 'VT323', monospace;
-  color:  #ffa347;
+  text-decoration: none;
+  width: 45vh;
+  margin: 0 auto;
+  list-style: none;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 1.4em;
+  font-family: "VT323", monospace;
+  color: #ffa347;
 }
 .login:hover {
   color: white;
   cursor: pointer;
 }
-.selectImg{
+.selectImg {
   width: 20px;
   height: 20px;
 }
@@ -148,18 +148,22 @@ button.open img {
 /*/////////*/
 .blocker {
   position: fixed;
-  top: 0; right: 0; bottom: 0; left: 0;
-  width: 100%; height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   overflow: auto;
   z-index: 1;
   padding: 20px;
   box-sizing: border-box;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0,0.75);
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.75);
   text-align: center;
-	align-content: center;
+  align-content: center;
 }
-.blocker:before{
+.blocker:before {
   content: "";
   display: inline-block;
   height: 100%;
@@ -190,106 +194,105 @@ button.open img {
   -ms-box-shadow: 0 0 10px #000;
   box-shadow: 0 0 10px #000;
   text-align: center;
-	cursor: auto;
-	color: rgb(0, 235, 219);
-	font-size: 22px;
-	overflow: scroll;
+  cursor: auto;
+  color: rgb(0, 235, 219);
+  font-size: 22px;
+  overflow: scroll;
 }
-.fb-auth{
-	text-decoration: none;
-	width: 45vh;
-	margin: 0 auto;
-	list-style: none;
-	font-size: 15px;
-	font-weight: 700;
-	line-height: 1.4em;
-	font-family: 'VT323', monospace;
-	color: rgb(0, 235, 219);
+.fb-auth {
+  text-decoration: none;
+  width: 45vh;
+  margin: 0 auto;
+  list-style: none;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.4em;
+  font-family: "VT323", monospace;
+  color: rgb(0, 235, 219);
 }
 div.social-wrap button {
-	padding-right: 45px;
-	height: 35px;
-	background: none;
-	border: none;
-	display: block;
-	background-size: 35px 35px;
-	background-position: right center;
-	background-repeat: no-repeat;
-	border-radius: 4px;
-	color: white;
-	font-family: "Merriweather Sans", sans-serif;
-	font-size: 14px;
-	margin-bottom: 15px;
-	width: 205px;
-	border-bottom: 2px solid transparent;
-	border-left: 1px solid transparent;
-	border-right: 1px solid transparent;
-	box-shadow: 0 4px 2px -2px gray;
-	text-shadow: rgba(0, 0, 0, 0.5) -1px -1px 0;
+  padding-right: 45px;
+  height: 35px;
+  background: none;
+  border: none;
+  display: block;
+  background-size: 35px 35px;
+  background-position: right center;
+  background-repeat: no-repeat;
+  border-radius: 4px;
+  color: white;
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 14px;
+  margin-bottom: 15px;
+  width: 205px;
+  border-bottom: 2px solid transparent;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  box-shadow: 0 4px 2px -2px gray;
+  text-shadow: rgba(0, 0, 0, 0.5) -1px -1px 0;
 }
 div.social-wrap button:active {
-	background-color: #222;
+  background-color: #222;
 }
 div.social-wrap {
-	display: flex;
-	justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 button#facebook {
-	border-color: #2d5073;
-	background-color: #3b5998;
-	background-image: url(http://icons.iconarchive.com/icons/danleech/simple/512/facebook-icon.png);
+  border-color: #2d5073;
+  background-color: #3b5998;
+  background-image: url("../../imgs/facebook-icon.png");
 }
-#ex1 a{
-	text-decoration: none;
+#ex1 a {
+  text-decoration: none;
 }
 #ex1 {
-	overflow: auto;
+  overflow: auto;
 }
 #ex3 {
-	overflow: auto;
+  overflow: auto;
 }
 #ex4 {
-	overflow: hidden;
-	color: #ffa347;
+  overflow: hidden;
+  color: #ffa347;
 }
-#ex4  li {
-	list-style-type: none;
-	line-height: 1.4em;
+#ex4 li {
+  list-style-type: none;
+  line-height: 1.4em;
 }
-#ex4 a{
-	color: rgb(0, 235, 219);
-	text-decoration: none;
+#ex4 a {
+  color: rgb(0, 235, 219);
+  text-decoration: none;
 }
 /*/////////////////*/
 /* End of Modal Css*/
 /*/////////////////*/
 
-
-.game-over{
-	position: absolute;
-	height: 100%;
-	width: 100%;
-	z-index: 100000;
-	top: 0;
-	display: none;
-	cursor: default;
+.game-over {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 100000;
+  top: 0;
+  display: none;
+  cursor: default;
 }
-.game-over > img{
-	width: 100%;
-  height: 100vh
+.game-over > img {
+  width: 100%;
+  height: 100vh;
 }
-.play-again{
-	position: absolute;
-	top: 66vh;
-	left: 44vw;
-	text-decoration: none;
-	width: 45vh;
-	margin: 0 auto;
-	list-style: none;
-	font-size: 35px;
-	font-weight: 700;
-	line-height: 1.4em;
-	font-family: 'VT323', monospace;
-	color:  #fff;
-	cursor: pointer;
+.play-again {
+  position: absolute;
+  top: 66vh;
+  left: 44vw;
+  text-decoration: none;
+  width: 45vh;
+  margin: 0 auto;
+  list-style: none;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 1.4em;
+  font-family: "VT323", monospace;
+  color: #fff;
+  cursor: pointer;
 }
