@@ -21,8 +21,8 @@ jobs:
       if: branch =~ master$
       script:
         - aws s3 cp ./dist s3://alienhunt.sheaclose.com
-    - stage: deploy
-      name: deploy
+    - stage: invalidate
+      name: invalidate
       if: branch =~ master$
       script:
         - aws cloudfront create-invalidation --distribution-id E2BD1PN7KPPA5P --paths /*
