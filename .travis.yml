@@ -23,7 +23,8 @@ deploy:
   provider: s3
   access_key_id: $AWS_ACCESS_KEY_ID
   secret_access_key: $AWS_SECRET_ACCESS_KEY
-  bucket: "alienhunt.sheaclose.com"
+  bucket: alienhunt.sheaclose.com
+  acl: public_read
 
 after_deploy:
   - npm i -g travis-ci-cloudfront-invalidation
