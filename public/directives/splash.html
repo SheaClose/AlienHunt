@@ -1,0 +1,36 @@
+<div class="splashcontainer">
+  <div class="splashcontent">
+    <div class="title">
+      <div class="alienMargin">
+        <span style="display: none;">FAKE</span>
+      </div>
+      <div class="alien">Alien</div>
+      <div class="separator"></div>
+      <div class="hunt">Hunt</div>
+    </div>
+    <div class="splashbuttons">
+      <ul>
+        <li class="splashbutton" ng-click="stopSplashMusic(); play()">
+          <img class="selectImg selectImg1" ng-src="imgs/select.png" alt="" />
+          <span class="splashbutton1"> Play</span>
+        </li>
+        <li
+          class="splashbutton"
+          ng-show="!sound"
+          ng-click="mute(); sound=!sound"
+        >
+          <img class="selectImg selectImg4" ; ng-src="imgs/select.png" alt="" />
+          <span class="splashbutton4"> Mute</span>
+        </li>
+        <li
+          class="splashbutton"
+          ng-show="sound"
+          ng-click="unmute(); sound=!sound"
+        >
+          <img class="selectImg selectImg4" ; ng-src="imgs/select.png" alt="" />
+          <span class="splashbutton4"> Unmute</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

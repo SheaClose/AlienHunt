@@ -1,0 +1,30 @@
+dist: trusty
+sudo: required
+language: node_js
+node_js:
+  - '8'
+install:
+  - npm i
+stages:
+  - build
+jobs:
+  include:
+    - stage: build
+      name: Build
+      if: branch =~ dev|master$
+      script:
+        - npm run build
+
+before_deploy:
+  - git add --force dist
+  - git commit -m 'adds dist folder'
+
+deploy:
+  provider: s3
+  access_key_id: $AWS_ACCESS_KEY_ID
+  secret_access_key: $AWS_SECRET_ACCESS_KEY
+  bucket: "alienhunt.sheaclose.com"
+
+after_deploy:
+  - npm i -g travis-ci-cloudfront-invalidation
+  - travis-ci-cloudfront-invalidation -a $AWS_ACCESS_KEY_ID -s $AWS_SECRET_ACCESS_KEY -c E2BD1PN7KPPA5P -i '/*' -b $TRAVIS_BRANCH -p $TRAVIS_PULL_REQUEST -o 'master'

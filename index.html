@@ -1,31 +1,40 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="app">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Mada|VT323"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Bungee|Mada|VT323"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/assets/styles.css" />
+    <title>Alien Hunt</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="https://fonts.googleapis.com/css?family=Mada|VT323" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Bungee|Mada|VT323" rel="stylesheet">
-  <link rel="stylesheet" href="src/assets/styles.css">
-  <title>Alien Hunt</title>
-</head>
-
-<body>
-  <content>
-    <section>
-      <ui-view></ui-view>
-    </section>
-  </content>
-  <div class="game-over">
-    <img src="imgs/gameOver.jpg" alt="">
-    <h2 class='play-again' onclick='(function(){window.location.reload(true);})()'>Play again</h2>
-  </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.5.1/pixi.min.js"></script>
-  <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
-  <script src="https://code.createjs.com/easeljs-0.8.2.min.js"></script>
-  <script src="https://code.createjs.com/tweenjs-0.6.2.min.js"></script>
-  <script src="bundle.js"></script>
-</body>
-
+  <body>
+    <content>
+      <section>
+        <ui-view></ui-view>
+      </section>
+    </content>
+    <div class="game-over">
+      <img src="imgs/gameOver.jpg" alt="" />
+      <h2
+        class="play-again"
+        onclick="(function(){window.location.reload(true);})()"
+      >
+        Play again
+      </h2>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.5.1/pixi.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+    <script src="https://code.createjs.com/easeljs-0.8.2.min.js"></script>
+    <script src="https://code.createjs.com/tweenjs-0.6.2.min.js"></script>
+    <script src="./app.js"></script>
+  </body>
 </html>
