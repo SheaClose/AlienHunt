@@ -8,10 +8,10 @@ install:
   - pip install awscli --upgrade --user
 
 stages:
-  - build
+  - build_and_deploy
 stages:
   - name: build_and_deploy
-    if: branch = master
+    if: branch =~ master$
     script:
       - npm run build
       - aws s3 cp ./dist s3://alienhunt.sheaclose.com
