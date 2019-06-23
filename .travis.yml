@@ -9,12 +9,7 @@ install:
   - npm i
   - pip install awscli --upgrade --user
 
-stages:
-  - name: build_and_deploy
-    if: branch =~ master$
-    script:
-      - npm run build
-      - aws s3 cp ./dist s3://alienhunt.sheaclose.com
-      - aws cloudfront create-invalidation --distribution-id E2BD1PN7KPPA5P --paths /*
-stages:
-  - build_and_deploy
+script:
+  - npm run build
+  - aws s3 cp ./dist s3://alienhunt.sheaclose.com
+  - aws cloudfront create-invalidation --distribution-id E2BD1PN7KPPA5P --paths /*
