@@ -9,20 +9,10 @@ install:
 
 stages:
   - build
-jobs:
-  include:
-    - stage: build
-      name: Build
-      if: branch =~ master$
-      script:
-        - npm run build
-    - stage: deploy
-      name: deploy
-      if: branch =~ master$
-      script:
-        - aws s3 cp ./dist s3://alienhunt.sheaclose.com
-    - stage: invalidate
-      name: invalidate
-      if: branch =~ master$
-      script:
-        - aws cloudfront create-invalidation --distribution-id E2BD1PN7KPPA5P --paths /*
+stages:
+  - name: build_and_deploy
+    if: branch = master
+    script:
+      - npm run build
+      - aws s3 cp ./dist s3://alienhunt.sheaclose.com
+      - aws cloudfront create-invalidation --distribution-id E2BD1PN7KPPA5P --paths /*
