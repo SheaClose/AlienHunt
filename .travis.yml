@@ -11,5 +11,6 @@ install:
 
 script:
   - npm run build
+  - aws s3 rm s3://alienhunt.sheaclose.comm --recursive
   - aws s3 cp ./dist/ s3://alienhunt.sheaclose.com/ --recursive
   - aws cloudfront create-invalidation --distribution-id E2BD1PN7KPPA5P --paths /*
